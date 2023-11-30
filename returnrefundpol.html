@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS file  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Skillzify</title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
+</head>
+
+<body>
+
+     <!-- _______________________________
+    Our header comp 
+    ------------------- -->
+
+    <header class="header-comp">
+        <div class="header-flex-box">
+
+            <div class="left-header-box">
+
+                <div class="header-logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+
+                <div class="logo-text-box">
+                <h4>Admin Panel</h4>
+                </div>
+                
+            </div>
+
+            <div class="right-header-box">
+
+             
+
+                <div class="prof-logo-main">
+                    <div class="prof-logo">
+                        <img src="./images/prof-logo.png" alt="">
+                    </div>
+
+                    <div class="prof-show-box">
+
+                        <a href="#">
+                        <div class="prof-user-box">
+                                <img src="./images/prof-logo.png" alt="">
+                                <div class="user-info">
+                                    <h6>Saurabh Kumar</h6>
+                                    <span>Admin</span>
+                                </div>
+                        </div>
+                    </a>
+
+
+                    <a href="#">
+                        <div class="prof-user-box">
+                            <img src="./images/prof.png" alt="">
+                            <div class="user-info">
+                                <h6>Profile</h6>
+                            </div>
+                    </div>
+                    </a>
+
+                    <button class="log-out-btn">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </button>
+                    
+                    </div>
+                </div>
+
+                <div class="notif-main-box prof-logo-main">
+                <div class="not-btn">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+
+                <div class="prof-show-box notis-show-box">
+
+                    <a href="#">
+                    <div class="prof-user-box">
+                            <img src="./images/prof-logo.png" alt="">
+                            <div class="user-info">
+                                <h6>New message from Laur</h6>
+                                <span>13 messages</span>
+                            </div>
+                    </div>
+                </a>
+
+
+                
+                <a href="#">
+                    <div class="prof-user-box">
+                            <img src="./images/not-1.png" alt="">
+                            <div class="user-info">
+                                <h6>New album by travo scott</h6>
+                                <span>1 day</span>
+                            </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="prof-user-box">
+                            <img src="./images/not-2.png" alt="">
+                            <div class="user-info">
+                                <h6>Payment Successfully</h6>
+                                <span>1 day</span>
+                            </div>
+                    </div>
+                </a>
+              
+                
+                </div>
+                
+            </div>
+
+                
+            </div>
+            
+        </div>
+        
+    </header>
+
+ <!-- _______________________________
+    Our side nav comp 
+    ------------------- -->
+
+
+    <section class="side-nav-comp">
+        <div class="navbar">
+
+            <nav class="nav-list-main">
+
+                <div class="nav-li-box-main ">
+                <div class="nav-li-box">
+                        <div class="n-i">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+
+                        <a href="./index.html">Home</a>
+                        
+                </div>
+            </div>
+
+       
+
+            <div class="nav-li-box-main ">
+                <div class="nav-li-box nav-li-box-dropdown">
+                    <div class="n-i">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+
+                    <span>Students</span>
+                    
+            </div>
+
+            <div class="dropdown-list-box">
+
+                <!-- <li class=""><a href="./studdet.html">Student</a></li> -->
+                <li><a href="./studlist.html">Students</a></li>
+                <li><a href="./addstudent.html">Add New Student</a></li>
+
+                
+            </div>
+            </div>
+
+            
+            <div class="nav-li-box-main">
+                <div class="nav-li-box nav-li-box-dropdown">
+                    <div class="n-i">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                    </div>
+
+                    <span>Instructors</span>
+                    
+            </div>
+
+            <div class="dropdown-list-box">
+
+                <li><a href="./instructor.html">Instructors</a></li>
+                <li><a href="./addinstructor.html">Add Instructor</a></li>
+
+                
+            </div>
+            </div>
+
+           
+
+            <div class="nav-li-box-main ">
+                <div class="nav-li-box nav-li-box-dropdown">
+                    <div class="n-i">
+                        <i class="fa-solid fa-shop"></i>
+                    </div>
+
+                    <span>Courses</span>
+                    
+                </div>
+    
+                <div class="dropdown-list-box">
+    
+                    <li class=""><a href="#">Categories</a></li>
+                    <li class=""><a href="./courselist.html">Course List</a></li>
+    
+                    
+                </div>
+            </div>
+
+            <div class="nav-li-box-main navliactive">
+                <div class="nav-li-box nav-li-box-dropdown">
+                    <div class="n-i">
+                        <i class="fa-solid fa-arrows-to-circle"></i>
+                    </div>
+
+                    <span>Content Section</span>
+                    
+            </div>
+
+            <div class="dropdown-list-box ">
+
+                <li class=""><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./blog.html">Blog Section</a></li>
+                <li class=""><a href="./faq.html">FAQ Section</a></li>
+                <li class=""><a href="./privpol.html">Privacy Policy</a></li>
+                <li class="linkactive"><a href="./returnrefundpol.html">Return & Refund Policy</a></li>
+
+            </div>
+            </div>
+                
+            </nav>
+            
+        </div>
+    </section>
+
+
+    <main class="main-wrap ">
+
+        <section class="contact-page-comp priv-pol-comp">
+
+            <h5>Return & Refund Policy </h5>
+
+            <form action="#" class="privpolicy-form">
+
+
+
+                <div class="about-fild inst-inpt-fild cont-fild">
+                    <label>Title</label>
+                    <input type="text" name="title" id="title" placeholder="Below are the Privacy Policy By Technosoft Security Service">
+                </div>
+
+                
+                <div class="content inst-inpt-fild">
+                    <label for="description">Description</label>
+                    <div id="editor">PRIVACY POLICY  
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sit consectetur, deleniti quia nesciunt vero? Qui facilis quis eveniet voluptatum animi sed, commodi expedita illum rem ab ut vitae ea?
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi laboriosam tempora eum, impedit totam est natus ex quae iste minus quis a, dolorem rem molestiae, officia ad odio accusantium sunt.
+                    </div>
+                <script>
+                        ClassicEditor
+                                .create( document.querySelector( '#editor' ) )
+                                .then( editor => {
+                                        console.log( editor );
+                                } )
+                                .catch( error => {
+                                        console.error( error );
+                                } );
+                </script>
+                </div>
+
+
+                <button class="submit-btn submit-btn4">
+                    Submit
+                </button>
+                
+            </form>
+            
+        </section>
+        
+        
+    </main>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+    <!-- script js file -->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS file  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Skillzify</title>
+
+</head>
+
+<body>
+
+     <!-- _______________________________
+    Our header comp 
+    ------------------- -->
+
+    <header class="header-comp">
+        <div class="header-flex-box">
+
+            <div class="left-header-box">
+
+                <div class="header-logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+
+                <div class="logo-text-box">
+                <h4>Admin Panel</h4>
+                </div>
+                
+            </div>
+
+            <div class="right-header-box">
+
+             
+
+                <div class="prof-logo-main">
+                    <div class="prof-logo">
+                        <img src="./images/prof-logo.png" alt="">
+                    </div>
+
+                    <div class="prof-show-box">
+
+                        <a href="#">
+                        <div class="prof-user-box">
+                                <img src="./images/prof-logo.png" alt="">
+                                <div class="user-info">
+                                    <h6>Saurabh Kumar</h6>
+                                    <span>Admin</span>
+                                </div>
+                        </div>
+                    </a>
+
+
+                    <a href="#">
+                        <div class="prof-user-box">
+                            <img src="./images/prof.png" alt="">
+                            <div class="user-info">
+                                <h6>Profile</h6>
+                            </div>
+                    </div>
+                    </a>
+
+                    <button class="log-out-btn">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </button>
+                    
+                    </div>
+                </div>
+
+                <div class="notif-main-box prof-logo-main">
+                <div class="not-btn">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+
+                <div class="prof-show-box notis-show-box">
+
+                    <a href="#">
+                    <div class="prof-user-box">
+                            <img src="./images/prof-logo.png" alt="">
+                            <div class="user-info">
+                                <h6>New message from Laur</h6>
+                                <span>13 messages</span>
+                            </div>
+                    </div>
+                </a>
+
+
+                
+                <a href="#">
+                    <div class="prof-user-box">
+                            <img src="./images/not-1.png" alt="">
+                            <div class="user-info">
+                                <h6>New album by travo scott</h6>
+                                <span>1 day</span>
+                            </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="prof-user-box">
+                            <img src="./images/not-2.png" alt="">
+                            <div class="user-info">
+                                <h6>Payment Successfully</h6>
+                                <span>1 day</span>
+                            </div>
+                    </div>
+                </a>
+              
+                
+                </div>
+                
+            </div>
+
+                
+            </div>
+            
+        </div>
+        
+    </header>
+
+ <!-- _______________________________
+    Our side nav comp 
+    ------------------- -->
+
+
+    <section class="side-nav-comp">
+        <div class="navbar">
+
+            <nav class="nav-list-main">
+
+                <div class="nav-li-box-main ">
+                <div class="nav-li-box">
+                        <div class="n-i">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+
+                        <a href="./index.html">Home</a>
+                        
+                </div>
+            </div>
+
+           
+
+            <div class="nav-li-box-main ">
+                <div class="nav-li-box nav-li-box-dropdown">
+                    <div class="n-i">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+
+                    <span>Students</span>
+                    
+            </div>
+
+            <div class="dropdown-list-box">
+
+                <!-- <li class=""><a href="./studdet.html">Student</a></li> -->
+                <li><a href="./studlist.html">Students</a></li>
+                <li><a href="./addstudent.html">Add New Student</a></li>
+
+                
+            </div>
+            </div>
+
+            
+            <div class="nav-li-box-main">
+                <div class="nav-li-box nav-li-box-dropdown">
+                    <div class="n-i">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                    </div>
+
+                    <span>Instructors</span>
+                    
+            </div>
+
+            <div class="dropdown-list-box">
+
+                <li><a href="./instructor.html">Instructors</a></li>
+                <li><a href="./addinstructor.html">Add Instructor</a></li>
+
+                
+            </div>
+            </div>
+
+           
+
+            <div class="nav-li-box-main ">
+                <div class="nav-li-box nav-li-box-dropdown">
+                    <div class="n-i">
+                        <i class="fa-solid fa-shop"></i>
+                    </div>
+
+                    <span>Courses</span>
+                    
+                </div>
+    
+                <div class="dropdown-list-box">
+    
+                    <li class=""><a href="#">Categories</a></li>
+                    <li class=""><a href="./courselist.html">Course List</a></li>
+    
+                    
+                </div>
+            </div>
+
+            <div class="nav-li-box-main navliactive">
+                <div class="nav-li-box nav-li-box-dropdown">
+                    <div class="n-i">
+                        <i class="fa-solid fa-arrows-to-circle"></i>
+                    </div>
+
+                    <span>Content Section</span>
+                    
+            </div>
+
+            <div class="dropdown-list-box ">
+
+                <li class=""><a href="./about.html">About Us</a></li>
+                <li class="linkactive"><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./blog.html">Blog Section</a></li>
+                <li class=""><a href="./faq.html">FAQ Section</a></li>
+                <li><a href="./privpol.html">Privacy Policy</a></li>
+                <li><a href="./returnrefundpol.html">Return & Refund Policy</a></li>
+
+            </div>
+            </div>
+                
+            </nav>
+            
+        </div>
+    </section>
+
+
+
+
+    <main class="main-wrap ">
+
+        <section class="contact-page-comp">
+
+            <h5>Contact Details</h5>
+
+          
+
+
+            <form action="#" class="contact-form">
+
+
+                <h6>Mail Address</h6>
+
+                <div class="cont-form-grid grid grid-two-col">
+
+                    <div class="about-fild inst-inpt-fild cont-fild">
+                        <input type="mail" name="email" id="email" placeholder="Sales Mail Add">
+                    </div>
+
+                    <div class="about-fild inst-inpt-fild cont-fild cont-fild2">
+                        <input type="mail" name="email" id="email" placeholder="Support Mail Add">
+                    </div>
+                    
+                </div>
+
+                <div class="about-fild inst-inpt-fild cont-fild mt-5 mb-5">
+                    <h6>Office Address</h6>
+                    <input type="text" name="address" id="address" placeholder="Full Office Address">
+                </div>
+
+
+                
+                <h6>Phone Number</h6>
+                <div class="cont-form-grid grid grid-two-col mb-5">
+
+                    <div class="about-fild inst-inpt-fild cont-fild">
+                        <input type="text" name="phone" id="phone" placeholder="Mobile number for sales">
+                    </div>
+
+                    <div class="about-fild inst-inpt-fild cont-fild cont-fild2">
+                        <input type="text" name="phone" id="phone" placeholder="Mobile number for support">
+                    </div>
+                    
+                </div>
+
+
+
+                <h6>Social Media Links</h6>
+                <div class="cont-form-grid grid grid-two-col">
+
+                    <div class="about-fild inst-inpt-fild cont-fild">
+                        <input type="text" name="facebook" id="facebook" placeholder="Facebook page link">
+                    </div>
+
+                    <div class="about-fild inst-inpt-fild cont-fild">
+                        <input type="text" name="instagram" id="instagram" placeholder="Instagram page link">
+                    </div>
+
+
+                    <div class="about-fild inst-inpt-fild cont-fild">
+                        <input type="text" name="youtube" id="youtube" placeholder="Youtube page link">
+                    </div>
+
+
+                    <div class="about-fild inst-inpt-fild cont-fild">
+                        <input type="text" name="linkedin" id="linkedin" placeholder="Linkedin page link">
+                    </div>
+
+                    <div class="about-fild inst-inpt-fild cont-fild">
+                        <input type="text" name="twitter" id="twitter" placeholder="Twitter page link">
+                    </div>
+
+
+                    <div class="about-fild inst-inpt-fild cont-fild">
+                        <input type="text" name="whatsapp" id="whatsapp" placeholder="Whatsapp page link">
+                    </div>
+                    
+                </div>
+
+
+                <button class="submit-btn">
+                    Save Changes
+                </button>
+                
+            </form>
+            
+        </section>
+        
+        
+    </main>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+    <!-- script js file -->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

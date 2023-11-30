@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS file  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Skillzify</title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
+</head>
+
+<body>
+
+    <!-- _______________________________
+    Our header comp 
+    ------------------- -->
+
+    <header class="header-comp">
+        <div class="header-flex-box">
+
+            <div class="left-header-box">
+
+                <div class="header-logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+
+                <div class="logo-text-box">
+                    <h4>Admin Panel</h4>
+                </div>
+
+            </div>
+
+            <div class="right-header-box">
+
+
+                <div class="prof-logo-main">
+                    <div class="prof-logo">
+                        <img src="./images/prof-logo.png" alt="">
+                    </div>
+
+                    <div class="prof-show-box">
+
+                        <a href="#">
+                            <div class="prof-user-box">
+                                <img src="./images/prof-logo.png" alt="">
+                                <div class="user-info">
+                                    <h6>Saurabh Kumar</h6>
+                                    <span>Admin</span>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a href="#">
+                            <div class="prof-user-box">
+                                <img src="./images/prof.png" alt="">
+                                <div class="user-info">
+                                    <h6>Profile</h6>
+                                </div>
+                            </div>
+                        </a>
+
+                        <button class="log-out-btn">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            Logout
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="notif-main-box prof-logo-main">
+                    <div class="not-btn">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+
+                    <div class="prof-show-box notis-show-box">
+
+                        <a href="#">
+                            <div class="prof-user-box">
+                                <img src="./images/prof-logo.png" alt="">
+                                <div class="user-info">
+                                    <h6>New message from Laur</h6>
+                                    <span>13 messages</span>
+                                </div>
+                            </div>
+                        </a>
+
+
+
+                        <a href="#">
+                            <div class="prof-user-box">
+                                <img src="./images/not-1.png" alt="">
+                                <div class="user-info">
+                                    <h6>New album by travo scott</h6>
+                                    <span>1 day</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="prof-user-box">
+                                <img src="./images/not-2.png" alt="">
+                                <div class="user-info">
+                                    <h6>Payment Successfully</h6>
+                                    <span>1 day</span>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- _______________________________
+    Our side nav comp 
+    ------------------- -->
+
+
+    <section class="side-nav-comp">
+        <div class="navbar">
+
+            <nav class="nav-list-main">
+
+                <div class="nav-li-box-main ">
+                    <div class="nav-li-box">
+                        <div class="n-i">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+
+                        <a href="./index.html">Home</a>
+
+                    </div>
+                </div>
+                
+              
+
+                <div class="nav-li-box-main ">
+                    <div class="nav-li-box nav-li-box-dropdown">
+                        <div class="n-i">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+
+                        <span>Students</span>
+
+                    </div>
+
+                    <div class="dropdown-list-box">
+
+                        <!-- <li><a href="./studdet.html">Student</a></li> -->
+                        <li><a href="./studlist.html">Students</a></li>
+                        <li class=""><a href="./addstudent.html">Add New Student</a></li>
+
+
+                    </div>
+                </div>
+
+
+                <div class="nav-li-box-main ">
+                    <div class="nav-li-box nav-li-box-dropdown">
+                        <div class="n-i">
+                            <i class="fa-solid fa-person-chalkboard"></i>
+                        </div>
+
+                        <span>Instructors</span>
+
+                    </div>
+
+                    <div class="dropdown-list-box">
+
+                        <li><a href="./instructor.html">Instructors</a></li>
+                        <li><a href="./addinstructor.html">Add Instructor</a></li>
+
+
+                    </div>
+                </div>
+
+              
+
+                <div class="nav-li-box-main navliactive">
+                    <div class="nav-li-box nav-li-box-dropdown">
+                        <div class="n-i">
+                            <i class="fa-solid fa-shop"></i>
+                        </div>
+
+                        <span>Courses</span>
+
+                    </div>
+
+                    <div class="dropdown-list-box">
+
+                        <li><a href="./category.html">Categories</a></li>
+                        <li class="linkactive"><a href="./courselist.html">Course List</a></li>
+
+
+                    </div>
+                </div>
+
+
+                <div class="nav-li-box-main ">
+                    <div class="nav-li-box nav-li-box-dropdown">
+                        <div class="n-i">
+                            <i class="fa-solid fa-arrows-to-circle"></i>
+                        </div>
+    
+                        <span>Content Section</span>
+                        
+                </div>
+    
+                <div class="dropdown-list-box">
+    
+                    <li class=""><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="./blog.html">Blog Section</a></li>
+                    <li class=""><a href="./faq.html">FAQ Section</a></li>
+                    <li><a href="./privpol.html">Privacy Policy</a></li>
+                    <li><a href="./returnrefundpol.html">Return Policy</a></li>
+    
+                </div>
+                </div>
+
+            </nav>
+
+        </div>
+    </section>
+
+
+
+
+    <main class="main-wrap ">
+
+        <section class="add-instruct-comp">
+
+            <div class="inst-prof-box inst-prof-box5">
+                <div class="left-inst-prof-img">
+                    <img src="./images/not-1.png" alt="">
+                </div>
+                <div class="inst-prof-info">
+                    <h6>Sample course title from technology</h6>
+                    <span>Development</span>
+                </div>
+            </div>
+
+
+            <div class="vital-infor-form-box">
+
+                <h6>Batch Information</h6>
+
+                <form action="#">
+
+                    <div class="inst-inpt-grid grid stud-inpt-grid corse-det-form-grid">
+
+
+
+                        <div class="inst-inpt-fild">
+                            <label for="address">Course Name</label>
+                            <input type="text" name="coursename" id="coursename"
+                                placeholder="Sample course title from technology">
+                        </div>
+
+                        <div class="inst-inpt-fild">
+                            <label for="address">Category</label>
+                            <select name="category" id="category">
+                                <option value="category">Select</option>
+                                <option value="category">Development</option>
+                                <option value="category">UX</option>
+                                <option value="category">Language</option>
+                                <option value="category">Hardware</option>
+                                <option value="category">Security</option>
+                                <option value="category">test</option>
+
+
+                            </select>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="inst-inpt-grid grid grid-three-col">
+
+                        <div class="inst-inpt-fild">
+                            <label for="address">Instructor</label>
+                            <select name="category" id="category">
+                                <option value="category">Second Instructor -edited</option>
+                                <option value="category">Second Instructor -edited</option>
+                                <option value="category">Second Instructor -edited</option>
+                                <option value="category">Second Instructor -edited</option>
+                                <option value="category">Second Instructor -edited</option>
+                                <option value="category">Second Instructor -edited</option>
+                                <option value="category">Second Instructor -edited</option>
+
+
+                            </select>
+                        </div>
+
+                        <div class="inst-inpt-fild">
+                            <label for="address">Language</label>
+                            <select name="category" id="category">
+                                <option value="category">Select</option>
+                                <option value="category">English</option>
+                                <option value="category">Hindi</option>
+                                <option value="category">Bengali</option>
+                                <option value="category">Punjabi</option>
+                                <option value="category">German</option>
+                                <option value="category">Tamil</option>
+
+
+                            </select>
+                        </div>
+
+                        <div class="inst-inpt-fild">
+                            <label for="address">Batch Selecting Date</label>
+                            <input type="date"  name="date" id="date">
+                        </div>
+
+                    </div>
+
+                    <div class="inst-inpt-grid grid grid-three-col">
+
+                        <div class="inst-inpt-fild">
+                            <label for="Image">Course Banner </label>
+                            <input type="file" accept="image/*" name="Image" id="Image" >
+                        </div>
+
+                        <div class="inst-inpt-fild">
+                            <label for="address">Course Price</label>
+                            <input type="text"  name="courseprice" id="courseprice" placeholder="Course Price ...">
+                        </div>
+
+                        <div class="inst-inpt-fild">
+                            <label for="address">Gross Price</label>
+                            <input type="text"  name="grossprice" id="grossprice" placeholder="Gross Price ...">
+                        </div>
+
+                    </div>
+
+
+                    <div class="inst-inpt-grid grid grid-three-col ">
+
+
+                        <div class="inst-inpt-fild">
+                            <label for="address">Skill Level</label>
+                            <select name="category" id="category">
+                                <option value="category">Select</option>
+                                <option value="category">High </option>
+                                <option value="category">Low </option>
+                                <option value="category">Medium</option>
+
+                            </select>
+                        </div>
+
+                        <div class="inst-inpt-fild">
+                            <label for="address">Featured ?</label>
+                            <select name="category" id="category">
+                                <option value="category">yes</option>
+                                <option value="category">No </option>
+
+
+                            </select>
+                        </div>
+
+                        <div class="inst-inpt-fild">
+                            <label for="address">Certificate Available ?</label>
+                            <select name="category" id="category">
+                                <option value="category">yes</option>
+                                <option value="category">No </option>
+
+
+                            </select>
+                        </div>
+
+
+                    </div>
+
+                    <h6 class="class-link">Class Links</h6>
+
+    
+                        <div class="about-fild inst-inpt-fild cont-fild">
+                            <input type="text" name="goglemeet" id="goglemeet" placeholder="GoogleMeet / Zoom Link ">
+                        </div>
+
+
+                        <div class="lesson-flex-box mt-5">
+
+                    <h6 class="class-link ">Lessons</h6>
+
+                    <button class="add-leson">Add Lesson</button>
+
+                </div>
+
+
+                        <div class="lesson-fild-grid mt-5">
+
+                            <div class="inst-inpt-fild lesson-fild">
+                                <label for="address">Lesson Name</label>
+                                <input type="text" name="lessonname" id="lessonname" placeholder="Lesson Name ">
+                            </div>
+
+
+                            <div class="inst-inpt-fild lesson-fild">
+                                <label for="address">Lesson Duration</label>
+                                <input type="text" name="lessonduration" id="lessonduration" placeholder="Lesson Duration ">
+                            </div>
+
+                            
+                            <div class="inst-inpt-fild lesson-fild">
+                                <label for="address">Lesson Date</label>
+                                <input type="date" name="lessondate" id="lessondate" placeholder="  ">
+                            </div>
+
+
+                            <div class="inst-inpt-fild lesson-fild">
+                                <label for="address">Lesson Time</label>
+                                <input type="text" name="lessontime" id="lessontime" placeholder="Lesson Time ">
+                            </div>
+                            
+                        </div>
+    
+                        
+                        
+
+
+                    <div class="content">
+                        <div id="editor">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum repudiandae
+                            laboriosam sit aperiam dolor, voluptas ab at quis nostrum, tempora accusamus? Facere eius saepe
+                            nesciunt necessitatibus blanditiis quod fugiat similique exercitationem. Aperiam, error cum, nulla
+                            inventore earum omnis quo vero nesciunt ad aut amet. Ad asperiores placeat officia obcaecati vero
+                            dolor, deserunt tempore eligendi eaque cupiditate tenetur consequuntur unde assumenda optio laborum
+                            est velit, eius fugit architecto accusantium molestiae blanditiis. Ratione, fugiat omnis tenetur ad
+                            neque, maiores necessitatibus corrupti repellat assumenda perspiciatis, est amet quo excepturi vel
+                            quae facere nemo? Quasi et iste ut animi adipisci, laboriosam in explicabo debitis maxime. Aperiam,
+                            iure eos eligendi explicabo quaerat eaque itaque vel reiciendis possimus dolores eius sit laboriosam
+                            saepe doloribus voluptates culpa voluptatum corporis dignissimos repellat minus! At molestiae
+                            consequatur vel, eveniet optio cum rerum nostrum inventore consequuntur! Cumque excepturi vel ad
+                            quod soluta reprehenderit sint, nobis aliquam laudantium ducimus voluptate vero sunt unde nam
+                            repudiandae dolore similique, voluptatum culpa libero officia officiis, dolor molestiae? Repellendus
+                            mollitia tempore soluta neque, pariatur quasi rem quis ratione, vitae qui non. Tenetur possimus nam
+                            ratione aspernatur repellendus dolorem dolorum, aliquid molestiae, repellat facere quod omnis
+                            aliquam unde! Atque, odit delectus, aliqua .</div>
+        
+                            
+                        <script>
+                            ClassicEditor
+                                .create(document.querySelector('#editor'))
+                                .then(editor => {
+                                    console.log(editor);
+                                })
+                                .catch(error => {
+                                    console.error(error);
+                                });
+                        </script>
+                    </div>
+
+                    
+               
+        
+        
+                    <div class="content">
+                        <div id="editorone">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum repudiandae
+                            laboriosam sit aperiam dolor, voluptas ab at quis nostrum, tempora accusamus? Facere eius saepe
+                            nesciunt necessitatibus blanditiis quod fugiat similique exercitationem. Aperiam, error cum, nulla
+                            inventore earum omnis quo vero nesciunt ad aut amet. Ad asperiores placeat officia obcaecati vero
+                            dolor, deserunt tempore eligendi eaque cupiditate tenetur consequuntur unde assumenda optio laborum
+                            est velit, eius fugit architecto accusantium molestiae blanditiis. Ratione, fugiat omnis tenetur ad
+                            neque, maiores necessitatibus corrupti repellat assumenda perspiciatis, est amet quo excepturi vel
+                            quae facere nemo? Quasi et iste ut animi adipisci, laboriosam in explicabo debitis maxime. Aperiam,
+                            iure eos eligendi explicabo quaerat eaque itaque vel reiciendis possimus dolores eius sit laboriosam
+                            saepe doloribus voluptates culpa voluptatum corporis dignissimos repellat minus! At molestiae
+                            consequatur vel, eveniet optio cum rerum nostrum inventore consequuntur! Cumque excepturi vel ad
+                            quod soluta reprehenderit sint, nobis aliquam laudantium ducimus voluptate vero sunt unde nam
+                            repudiandae dolore similique, voluptatum culpa libero officia officiis, dolor molestiae? Repellendus
+                            mollitia tempore soluta neque, pariatur quasi rem quis ratione, vitae qui non. Tenetur possimus nam
+                            ratione aspernatur repellendus dolorem dolorum, aliquid molestiae, repellat facere quod omnis
+                            aliquam unde! Atque, odit delectus, aliqua .</div>
+        
+                            
+                        <script>
+                            ClassicEditor
+                                .create(document.querySelector('#editorone'))
+                                .then(editorone => {
+                                    console.log(editorone);
+                                })
+                                .catch(error => {
+                                    console.error(editorone);
+                                });
+                        </script>
+                    </div>
+
+
+
+
+                    <button class="submit-btn">
+                        Submit
+                    </button>
+
+                </form>
+
+            </div>
+
+
+
+
+           
+
+        </section>
+
+
+     
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- script js file -->
+    <script src="./js/index.js"></script>
+    <script>
+
+        const addRowBtn =  document.querySelector('.add-leson');
+        const lessonFild =  document.querySelector('.lesson-fild-grid');
+
+
+        const addFild = function(e) {
+
+
+            const lesonInputname =  document.createElement('div');
+            lesonInputname.classList.add('inst-inpt-fild') ;
+
+            
+            const lesonInputtime =  document.createElement('div');
+            lesonInputtime.classList.add('inst-inpt-fild') ;
+
+            const lesonInputdate =  document.createElement('div');
+            lesonInputdate.classList.add('inst-inpt-fild') ;
+
+            
+            const lesonInputdurat =  document.createElement('div');
+            lesonInputdurat.classList.add('inst-inpt-fild') ;
+
+            const lesonname =  document.createElement('input');
+            const lesonnamelabel =  document.createElement('label');
+            lesonnamelabel.innerHTML = "Lesson Name"
+            lesonname.type = "text";
+            lesonname.placeholder = 'Lesson Name';
+
+            const lesondurat =  document.createElement('input');
+            const lesonduratlabel =  document.createElement('label');
+            lesonduratlabel.innerHTML = "Lesson Duration";
+            lesondurat.type = "text";
+            lesondurat.placeholder = 'Lesson Duration';
+
+            const lesondate =  document.createElement('input');
+            const lesondatelabel =  document.createElement('label');
+            lesondatelabel.innerHTML = "Lesson Date";
+            lesondate.type = "date";
+
+            const lesontime =  document.createElement('input');
+            const lesontimelabel =  document.createElement('label');
+            lesontimelabel.innerHTML = "Lesson Time"
+            lesontime.type = "text";
+            lesontime.placeholder = 'Lesson Time';
+
+            lessonFild.appendChild(lesonInputname);
+            lesonInputname.appendChild(lesonnamelabel);
+            lesonInputname.appendChild(lesonname);
+
+            lessonFild.appendChild(lesonInputdurat);
+            lesonInputdurat.appendChild(lesonduratlabel);
+            lesonInputdurat.appendChild(lesondurat);
+
+            lessonFild.appendChild(lesonInputdate);
+            lesonInputdate.appendChild(lesondatelabel);
+            lesonInputdate.appendChild(lesondate);
+
+            lessonFild.appendChild(lesonInputtime);
+            lesonInputtime.appendChild(lesontimelabel);
+            lesonInputtime.appendChild(lesontime);
+
+            e.preventDefault();
+
+            
+        }
+
+
+        addRowBtn.addEventListener("click", addFild);
+
+
+    </script>
+
+</body>
+
+</html>

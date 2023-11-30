@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS file  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Skillzify</title>
+
+</head>
+
+<body>
+
+     <!-- _______________________________
+    Our header comp 
+    ------------------- -->
+
+    <header class="header-comp">
+        <div class="header-flex-box">
+
+            <div class="left-header-box">
+
+                <div class="header-logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+
+                <div class="logo-text-box">
+                <h4>Admin Panel</h4>
+                </div>
+                
+            </div>
+
+            <div class="right-header-box">
+
+              
+
+                <div class="prof-logo-main">
+                    <div class="prof-logo">
+                        <img src="./images/prof-logo.png" alt="">
+                    </div>
+
+                    <div class="prof-show-box">
+
+                        <a href="#">
+                        <div class="prof-user-box">
+                                <img src="./images/prof-logo.png" alt="">
+                                <div class="user-info">
+                                    <h6>Saurabh Kumar</h6>
+                                    <span>Admin</span>
+                                </div>
+                        </div>
+                    </a>
+
+
+                    <a href="#">
+                        <div class="prof-user-box">
+                            <img src="./images/prof.png" alt="">
+                            <div class="user-info">
+                                <h6>Profile</h6>
+                            </div>
+                    </div>
+                    </a>
+
+                    <button class="log-out-btn">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </button>
+                    
+                    </div>
+                </div>
+
+                <div class="notif-main-box prof-logo-main">
+                <div class="not-btn">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+
+                <div class="prof-show-box notis-show-box">
+
+                    <a href="#">
+                    <div class="prof-user-box">
+                            <img src="./images/prof-logo.png" alt="">
+                            <div class="user-info">
+                                <h6>New message from Laur</h6>
+                                <span>13 messages</span>
+                            </div>
+                    </div>
+                </a>
+
+
+                
+                <a href="#">
+                    <div class="prof-user-box">
+                            <img src="./images/not-1.png" alt="">
+                            <div class="user-info">
+                                <h6>New album by travo scott</h6>
+                                <span>1 day</span>
+                            </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="prof-user-box">
+                            <img src="./images/not-2.png" alt="">
+                            <div class="user-info">
+                                <h6>Payment Successfully</h6>
+                                <span>1 day</span>
+                            </div>
+                    </div>
+                </a>
+              
+                
+                </div>
+                
+            </div>
+
+                
+            </div>
+            
+        </div>
+        
+    </header>
+
+ <!-- _______________________________
+    Our side nav comp 
+    ------------------- -->
+
+
+    <section class="side-nav-comp">
+        <div class="navbar">
+
+            <nav class="nav-list-main">
+
+                <div class="nav-li-box-main ">
+                <div class="nav-li-box">
+                        <div class="n-i">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+
+                        <a href="./index.html">Home</a>
+                        
+                </div>
+            </div>
+
+          
+
+            <div class="nav-li-box-main ">
+                <div class="nav-li-box nav-li-box-dropdown">
+                    <div class="n-i">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+
+                    <span>Students</span>
+                    
+            </div>
+
+            <div class="dropdown-list-box">
+
+                <!-- <li><a href="./studdet.html">Student</a></li> -->
+                <li><a href="./studlist.html">Students</a></li>
+                <li><a href="./addstudent.html">Add New Student</a></li>
+
+                
+            </div>
+            </div>
+
+            
+            <div class="nav-li-box-main navliactive">
+                <div class="nav-li-box nav-li-box-dropdown">
+                    <div class="n-i">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                    </div>
+
+                    <span>Instructors</span>
+                    
+            </div>
+
+            <div class="dropdown-list-box">
+
+                <li class="linkactive"><a href="./instructor.html">Instructors</a></li>
+                <li><a href="./addinstructor.html">Add Instructor</a></li>
+
+                
+            </div>
+            </div>
+
+
+            <div class="nav-li-box-main">
+                <div class="nav-li-box nav-li-box-dropdown">
+                    <div class="n-i">
+                        <i class="fa-solid fa-shop"></i>
+                    </div>
+
+                    <span>Courses</span>
+                    
+            </div>
+
+            <div class="dropdown-list-box">
+
+                <li><a href="./category.html">Categories</a></li>
+                <li><a href="./courselist.html">Course List</a></li>
+
+                
+            </div>
+            </div>
+
+            <div class="nav-li-box-main ">
+                <div class="nav-li-box nav-li-box-dropdown">
+                    <div class="n-i">
+                        <i class="fa-solid fa-arrows-to-circle"></i>
+                    </div>
+
+                    <span>Content Section</span>
+                    
+            </div>
+
+            <div class="dropdown-list-box">
+
+                <li class=""><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./blog.html">Blog Section</a></li>
+                <li class=""><a href="./faq.html">FAQ Section</a></li>
+                <li><a href="./privpol.html">Privacy Policy</a></li>
+                <li><a href="./returnrefundpol.html">Return & Refund Policy</a></li>
+
+            </div>
+            </div>
+                
+            </nav>
+            
+        </div>
+    </section>
+
+
+
+
+    <main class="main-wrap ">
+
+
+        
+
+        <section class="payment-hist-comp">
+
+
+            <div class="paym-hist-table-bx student-table-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SN.</th>
+                            <th>Instructor Name</th>
+                            <th>Mobile Number </th>
+                            <th>Email Id</th>
+                            <th>Course Assigned</th>
+                            <th>View</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                             <span class="num">1</span>
+                            </td>
+
+                            <td>
+                                <span class="text">Rahul Sharma</span>
+                            </td>
+
+                            <td>
+                                <span class="text">9898989767</span>
+                            </td>
+
+
+                            <td>
+                                <a href="#" class="text emailid">faiz@digitaldezire.com</a>
+                            </td>
+
+                            <td>
+                                <span class="amount ">Basic HTML </span>
+                            </td>
+
+                            <td>
+                                <button class="view-eye-course-btn coursetext">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                            </td>
+
+                           
+
+                            <td>
+                                <span class="statusactive">Active</span>
+                            </td>
+
+                            <td>
+                                <div class="action-btns">
+                                   <a href="./addinstructor.html"> <button>Edit</button> </a>
+                                    <button>Banned</button>
+                                    <button>Remove</button>
+    
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+
+                            <td>
+                             <span class="num">2</span>
+                            </td>
+
+                            <td>
+                                <span class="text">Rahul Sharma</span>
+                            </td>
+
+                            <td>
+                                <span class="text">9898989767</span>
+                            </td>
+
+
+                            <td>
+                                <a href="#" class="text emailid">faiz@digitaldezire.com</a>
+                            </td>
+
+                            <td>
+                                <span class="amount coursetext">Advance HTML </span>
+                            </td>
+
+                            <td>
+                                <button class="view-eye-course-btn coursetext">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                            </td>
+
+                            <td>
+                                <span class="statusactive">Active</span>
+                            </td>
+
+                            <td>
+                                <div class="action-btns">
+                                    <a href="./addinstructor.html">  <button>Edit</button> </a>
+                                    <button>Banned</button>
+                                    <button>Remove</button>
+    
+                                </div>
+                            </td>
+                            
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                             <span class="num">3</span>
+                            </td>
+
+                            <td>
+                                <span class="text">Rahul Sharma</span>
+                            </td>
+
+                            <td>
+                                <span class="text">9898989767</span>
+                            </td>
+
+
+                            <td>
+                                <a href="#" class="text emailid">faiz@digitaldezire.com</a>
+                            </td>
+
+                            <td>
+                                <span class="amount ">Java Script</span>
+                            </td>
+
+                            <td>
+                                <button class="view-eye-course-btn coursetext">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                            </td>
+
+                            <td>
+                                <span class="statusactive">Active</span>
+                            </td>
+
+                            <td>
+                                <div class="action-btns">
+                                    <a href="./addinstructor.html"> <button>Edit</button> </a>
+                                    <button>Banned</button>
+                                    <button>Remove</button>
+    
+                                </div>
+                            </td>
+
+                            
+                            
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                             <span class="num">4</span>
+                            </td>
+
+                            <td>
+                                <span class="text">Rahul Sharma</span>
+                            </td>
+
+                            <td>
+                                <span class="text">9898989767</span>
+                            </td>
+
+
+                            <td>
+                                <a href="#" class="text emailid">faiz@digitaldezire.com</a>
+                            </td>
+
+                            <td>
+                                <span class="amount">Python </span>
+                            </td>
+
+                            <td>
+                                <button class="view-eye-course-btn coursetext">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                            </td>
+
+                            
+
+                            <td>
+                                <span class="statusactive">Active</span>
+                            </td>
+
+                            <td>
+                                <div class="action-btns">
+                                    <a href="./addinstructor.html"> <button>Edit</button> </a>
+                                    <button>Banned</button>
+                                    <button>Remove</button>
+    
+                                </div>
+                            </td>
+                            
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            
+        </section>  
+        
+    </main>
+
+
+    <section class="course-popup-det-comp">
+
+        <div class="paym-hist-table-bx student-table-box course-det-table-box">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Batch Name</th>
+                        <th>Lesson </th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Class Link</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+
+
+                        <td>
+                            <span class="text">HTML 10-12 Batch</span>
+                        </td>
+
+                        <td>
+                            <span class="text">1</span>
+                            <span class="text">2</span>
+
+                        </td>
+
+                       
+
+                        
+
+
+                        <td>
+                            <a href="#" class="text ">25-11-2023</a>
+                            <a href="#" class="text ">26-11-2023</a>
+
+                        </td>
+
+                        <td>
+                            <span class="amount coursetext">10 AM to 12 PM</span>
+                            <span class="amount coursetext">10 AM to 12 PM</span>
+
+                        </td>
+
+                       <td>
+                            <a href="#" class="statusactive emailid">https://digitaldezire.com/</a>
+                       <a href="#" class="statusactive emailid">https://digitaldezire.com/</a>
+
+                       </td>
+
+                        <td>
+                            <div class="block-btns">
+                                <button class="Taken">Taken</button>
+                                <select name="select" class="Pending-selct">
+                                            <option value="option">Pending</option>
+                                            <option value="option">Taken</option>
+                                            <option value="option">Cancelled</option>
+
+                                </select>
+
+
+                            </div>
+                        </td>
+                        
+                    </tr>
+                    
+                    <tr>
+
+
+                        <td>
+                            <span class="text">HTML 10-12 Batch</span>
+                        </td>
+
+                        <td>
+                            <span class="text">1</span>
+                            <span class="text">2</span>
+
+                        </td>
+
+                       
+
+                        
+
+
+                        <td>
+                            <a href="#" class="text ">25-11-2023</a>
+                            <a href="#" class="text ">26-11-2023</a>
+
+                        </td>
+
+                        <td>
+                            <span class="amount coursetext">10 AM to 12 PM</span>
+                            <span class="amount coursetext">10 AM to 12 PM</span>
+
+                        </td>
+
+                       <td>
+                            <a href="#" class="statusactive emailid">https://digitaldezire.com/</a>
+                       <a href="#" class="statusactive emailid">https://digitaldezire.com/</a>
+
+                       </td>
+
+                        <td>
+                            <div class="block-btns">
+                                <button class="Taken">Taken</button>
+                                <select name="select" class="Pending-selct">
+                                            <option value="option">Pending</option>
+                                            <option value="option">Taken</option>
+                                            <option value="option">Cancelled</option>
+
+                                </select>
+
+
+                            </div>
+                        </td>
+                        
+                    </tr>
+
+
+                    <tr>
+
+
+                        <td>
+                            <span class="text">HTML 10-12 Batch</span>
+                        </td>
+
+                        <td>
+                            <span class="text">1</span>
+                            <span class="text">2</span>
+
+                        </td>
+
+                       
+
+                        
+
+
+                        <td>
+                            <a href="#" class="text ">25-11-2023</a>
+                            <a href="#" class="text ">26-11-2023</a>
+
+                        </td>
+
+                        <td>
+                            <span class="amount coursetext">10 AM to 12 PM</span>
+                            <span class="amount coursetext">10 AM to 12 PM</span>
+
+                        </td>
+
+                       <td>
+                            <a href="#" class="statusactive emailid">https://digitaldezire.com/</a>
+                       <a href="#" class="statusactive emailid">https://digitaldezire.com/</a>
+
+                       </td>
+
+                        <td>
+                            <div class="block-btns">
+                                <button class="Taken">Taken</button>
+                                <select name="select" class="Pending-selct">
+                                            <option value="option">Pending</option>
+                                            <option value="option">Taken</option>
+                                            <option value="option">Cancelled</option>
+
+                                </select>
+
+
+                            </div>
+                        </td>
+                        
+                    </tr>
+
+
+
+                    <tr>
+
+
+                        <td>
+                            <span class="text">HTML 10-12 Batch</span>
+                        </td>
+
+                        <td>
+                            <span class="text">1</span>
+                            <span class="text">2</span>
+
+                        </td>
+
+                       
+
+                        
+
+
+                        <td>
+                            <a href="#" class="text ">25-11-2023</a>
+                            <a href="#" class="text ">26-11-2023</a>
+
+                        </td>
+
+                        <td>
+                            <span class="amount coursetext">10 AM to 12 PM</span>
+                            <span class="amount coursetext">10 AM to 12 PM</span>
+
+                        </td>
+
+                       <td>
+                            <a href="#" class="statusactive emailid">https://digitaldezire.com/</a>
+                       <a href="#" class="statusactive emailid">https://digitaldezire.com/</a>
+
+                       </td>
+
+                        <td>
+                            <div class="block-btns">
+                                <button class="Taken">Taken</button>
+                                <select name="select" class="Pending-selct">
+                                            <option value="option">Pending</option>
+                                            <option value="option">Taken</option>
+                                            <option value="option">Cancelled</option>
+
+                                </select>
+
+
+                            </div>
+                        </td>
+                        
+                    </tr>
+
+
+                   
+
+
+                </tbody>
+            </table>
+
+            <div class="close-popup-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        
+    </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+    <!-- script js file -->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

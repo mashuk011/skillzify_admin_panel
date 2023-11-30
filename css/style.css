@@ -1,0 +1,2443 @@
+/* _______________________ Our font import from google fonts 
+------------------------------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+
+/* CSS reusable codes
+---------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Jost', sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #f6f5fb;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 6.67rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 5.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 2.76rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1.87rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.55rem;
+    font-weight: 500;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.45rem;
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-two-col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.grid-four-col {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.common-container {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+.common-container2 {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* __________________________
+ Our header comp css code
+ ----------------------------- */
+
+.header-comp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 2.87rem;
+    background-color: #f6f5fb;
+    z-index: 1000;
+
+}
+
+.header-flex-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-header-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+.header-logo {
+    position: relative;
+    width: 13rem;
+
+}
+
+.header-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.logo-text-box h4 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 5rem;
+}
+
+.right-header-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.right-header-box span {
+    font-size: 1.5rem;
+    color: #242424;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.prof-logo-main {
+    position: relative;
+}
+
+
+.prof-logo {
+    position: relative;
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+}
+
+.prof-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.notif-main-box .notis-show-box{
+    width: 30rem !important;
+    left: -28rem !important;
+}
+
+
+/* __________________________________
+  Our side nav comp css code
+  ---------------------------- */
+
+.side-nav-comp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25rem;
+    height: 100vh;
+    /* background-color: #f6f5fb; */
+    background-color: #fff;
+    z-index: 995;
+    padding: 15rem 2.87rem;
+
+}
+
+.navbar,
+.nav-list-main {
+    position: relative;
+    width: 100%;
+}
+
+.nav-list-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav-li-box-main {
+    position: relative;
+    width: 100%;
+}
+
+.nav-li-box {
+    position: relative;
+    width: 100%;
+    padding: 1.45rem 1.45rem;
+    /* background-color: #eeeaff; */
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    transition: 400ms ease;
+    cursor: pointer;
+
+}
+
+ 
+
+.n-i {
+    font-size: 1.5rem;
+    color: #515151;
+    transition: 400ms ease;
+    transition: 400ms ease;
+
+}
+
+.nav-li-box span , 
+.nav-li-box a {
+    font-size: 1.5rem;
+    display: inline-block;
+    color: #515151;
+    font-weight: 500;
+    letter-spacing: .67px;
+    transition: 400ms ease;
+
+}
+
+.nav-li-box:hover  .n-i , 
+.nav-li-box:hover span , 
+.nav-li-box:hover a , 
+.nav-li-box-main.navliactive .nav-li-box .n-i ,
+.nav-li-box-main.navliactive .nav-li-box span ,
+.nav-li-box-main.navliactive .nav-li-box a{
+    color: red;
+}
+
+.dropdown-list-box {
+    position: relative;
+    margin-top: 1rem;
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    display: none;
+}
+
+.nav-li-box-main.navliactive .dropdown-list-box{
+    display: flex;
+}
+
+.dropdown-list-box li {
+    position: relative;
+    width: 100%;
+    transition: 400ms ease;
+
+
+}
+
+.dropdown-list-box li:hover a , .dropdown-list-box li.linkactive a{
+    /* color: #fac641; */
+    color: red;
+}
+
+.dropdown-list-box li a {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.45rem;
+    color: #515151;
+    font-weight: 400;
+    letter-spacing: .56px;
+    transition: 400ms ease;
+}
+
+.nav-li-box-dropdown:before {
+    content: "\f107";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: .76rem;
+    font-size: 1.3rem;
+    color: #515151;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    transition: 100ms ease;
+}
+
+.nav-li-box-main.navliactive .nav-li-box-dropdown:before{
+    transform: translateY(-50%) rotate(180deg) ;
+}
+
+
+.prof-show-box{
+    position: absolute;
+    top: 4.5rem;
+    left: -20rem;
+    width: 25rem;
+    background-color: #fff;
+    padding: 1rem 1rem;
+    border-radius: .55rem;
+    z-index: 100;
+    transition: 400ms ease;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+.prof-logo-main:hover 
+.prof-show-box{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.prof-user-box{
+    position: relative;
+    width: 100%;
+    padding: 1rem 1rem 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border-bottom: .1rem solid #eee;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+
+.prof-user-box:hover{
+    background-color: #f4f2ff;
+}
+
+.prof-user-box img{
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-info h6{
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+    color: #242424;
+}
+
+.user-info span{
+    font-size: 1.35rem;
+    font-weight: 400;
+}
+
+.log-out-btn{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-block: 1.5rem;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #ede9ff;
+    font-size: 1.55rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+    color: #7b62f6;
+    border: none;
+    border-radius: .45rem;
+
+}
+
+
+.notif-main-box{
+    position: relative;
+}
+
+.not-btn{
+    position: relative;
+    font-size: 1.67rem;
+    color: #242424;
+    cursor: pointer;
+}
+
+/* _________________________________________
+ Our home one comp css code
+ ------------------------- */
+
+ .main-wrap{
+    position: relative;
+    width: 100%;
+    padding-left: 27rem;
+    padding-right: 2rem;
+    padding-top: 8rem;
+ }
+
+ .home-one-comp{
+    position: relative;
+    width: 100%;
+    padding-top: 1.5rem;
+
+ }
+
+ .home-one-main-box{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    padding: 2.45rem 2.65rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 5rem;
+    border-radius: 1rem;
+    row-gap: 4rem;
+ }
+
+ .left-home-big-text-box h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: .65px;
+    color: #fb6684;
+    margin-bottom: .76rem;
+ }
+
+ .left-home-big-text-box span{
+    font-size: 1.3rem;
+    color: #242424;
+    font-weight: 500;
+    letter-spacing: .5px;
+ }
+
+ .right-home-one-card-grid{
+    position: relative;
+    width: 100%;
+    column-gap: 3rem;
+    row-gap: 3rem;
+ }
+
+ .home-card-box{
+    position: relative;
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+    background-color: #7da5fb;
+    border-radius: .5rem;
+    color: #fff;
+ }
+
+ .home-card-box h5{
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: .65rem;
+ }
+
+ .home-card-box span{
+    font-size: 1.3rem;
+    color: #f5f5f5;
+    font-weight: 400;
+ }
+
+ .num-box{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: max-content;
+    padding: .35rem 1.3rem;
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: .5px;
+    color: #242424;
+    background-color: #fff;
+    border-radius: .4rem;
+    font-weight: 500;
+
+ }
+
+ .home-card-box2
+ {
+    background-color: #fb6684;
+ }
+
+ 
+ .home-card-box3{
+    background-color: #c782f2;
+
+ }
+
+ /* _________________________________________
+  Our home two comp css code
+  --------------------- */
+
+  .home-two-comp{
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+    padding-block: 3rem ;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding-inline: 1.87rem;
+  }
+
+  .homw-two-grid{
+    position: relative;
+    width: 100%;
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+
+  .home-two-card-box {
+    position: relative;
+    width: 100%;
+    padding: 2.76rem 1.87rem;
+    background-color: #ffebed;
+    border-radius: .5rem;
+
+  }
+
+  .home-two-card-box2{
+    background-color: #e5eeff;
+  }
+
+  .home-two-card-box3{
+    background-color: #eee6fe;
+  }
+
+  .home-two-card-box4{
+    background-color: #d8f0e3;
+  }
+
+  .home-two-card-box h6{
+    font-size: 1.76rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+    margin-bottom: .87rem;
+  }
+
+  .home-two-card-box h5{
+    font-size: 2.87rem;
+    color: #242424;
+    margin-bottom: 1rem;
+  }
+
+  .home-two-card-box span{
+    font-size: 1.3rem;
+    font-weight: 400;
+
+  }
+
+  .card-icon{
+    position: absolute;
+    top: 1.4em;
+    right: 1.4rem;
+    width: 4.78rem;
+    height: 4.78rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fb3762;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .card-icon2{
+    background-color: #3c88f9;
+  }
+
+  .card-icon3{
+    background-color: #7129d5;
+  }
+  .card-icon4{
+    background-color: #43cf7f;
+  }
+
+  /* _____________________________________
+   Our student table comp
+   --------------------------- */
+
+   .stud-tab-comp{
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 2rem 1.78rem;
+    background-color: #fff;
+    border-radius: .55rem;
+   }
+
+   .stu-search-flex-box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+
+   .left-student-search{
+    position: relative;
+    width: 30rem;
+    height: 4.5rem;
+    background-color: #fff;
+    border: .1rem solid #ddd;
+    border-radius: .45rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-inline: 1.5rem;
+   }
+
+   .left-student-search input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #242424;
+    background-color: transparent;
+    border: none;
+    letter-spacing: .5px;
+   }
+
+   
+   .left-student-search input::placeholder{
+    font-weight: 400;
+   }
+
+     
+   .left-student-search i{
+    font-size: 1.6rem;
+    color: #fb6684;
+   }
+
+   .right-student-btns-flex-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+   }
+
+   .new-sel-box{
+    position: relative;
+    width: 15rem;
+    background-color: #fff;
+    border: .1rem solid #ddd;
+    height: 4.5rem;
+    padding-inline: 1rem;
+    border-radius: .5rem;
+   }
+
+   .new-sel-box:before{
+    content: "\f0dd";
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    right: 1.2rem;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: #fb6684;
+   }
+
+   .new-sel-box select{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 1.55rem;
+    color: #242424;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+   }
+
+   .addnew-student-btn{
+    position: relative;
+    width: 15rem;
+    height: 4.5rem;
+    background-color: #fb3762;
+    border: none;
+    border: .1rem solid #fb3762;
+    font-size: 1.55rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: .5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+    border-radius: .45rem;
+   }
+
+   .student-table-box{
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    border-collapse: collapse;
+    margin-top: 4rem;
+    overflow-x: auto;
+
+   }
+
+   .student-table-box table{
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+   }
+
+   .student-table-box table thead tr th{
+    padding: 1.5rem 1.3rem;
+    font-size: 1.4rem;
+    color: #242424;
+    font-weight: 500;
+    letter-spacing: .65px;
+    background-color: #ffdee5;
+   }
+
+   .form-check input{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-color: #fb3762;
+    
+   }
+
+   .form-check input:focus-within{
+    background-color: #fb3762;
+    box-shadow: none;
+    border: none;
+   }
+
+   .student-table-box table tbody tr td{
+    padding: 1.5rem 1.1rem;
+   }
+
+   .student-info{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   }
+
+   .student-info img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+   }
+
+   .student-info h6{
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: .45px;
+   }
+
+   .id , .city{
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    color: #fb6684;
+   }
+  
+   .date{
+    font-size: 1.3rem;
+    color: #515151;
+   }
+
+   .city {
+    color: #242424;
+    font-weight: 500;
+    letter-spacing: .5px;
+
+   }
+
+   .cont-btns{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   }
+
+   .cont-btns button{
+    font-size: 1.3rem;
+    width: max-content;
+    background-color: transparent;
+    border: none;
+    color: #fb3762;
+    border-radius: .45rem;
+    
+   }
+
+   .action-btns {
+    display: flex;
+    align-items: center;
+    gap: .87rem;
+   }
+
+   .action-btns button{
+    background-color: transparent;
+    border: none;
+    width: max-content;
+    font-size: 1.3rem;
+    color: #fb3762;
+    font-weight: 500;
+   }
+
+   .action-btns button:nth-child(1){
+    color: green;
+   }
+
+   .action-btns button:nth-child(2){
+    color: #7129d5;
+   }
+
+   .grade-btn{
+    position: relative;
+    background-color: #fb3762;
+    border: none;
+    width: max-content;
+    padding: .65rem 1.76rem;
+    border-radius: .45rem;
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: #fff;
+
+   }
+
+
+   /* _____ selection  */
+
+   ::selection{
+    background-color: #fb3762;
+    color: #fff;
+   }
+
+
+   ::-webkit-scrollbar{
+    width: .556rem;
+    background-color: transparent;
+   }
+
+   ::-webkit-scrollbar-thumb{
+    background-color: #fb3762;
+
+   }
+
+
+/* __________________________________________ 
+Our student details comp css code
+------------------------ */
+
+.main-wrap2{
+    padding-inline-end: 35rem;
+}
+
+.stud-det-main-comp{
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.stud-det-main-comp h6{
+    font-size: 2.76rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+    color: #242424;
+}
+
+.user-prof-det-main-box{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 3rem 3rem;
+}
+
+.goback-link{
+    position: absolute;
+    top: 2rem;
+    right: 1.67rem;
+    width: max-content;
+    padding: .76rem 1.76rem;
+    background-color: #fb3762;
+    border-radius: .5rem;
+    color: #fff;
+    border-radius: .45rem;
+}
+
+.goback-link:hover{
+    color: #fff;
+}
+
+.stud-det-logo{
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    transform: translateY(-45%);
+    width: 11rem;
+    height: 11rem;
+    border: .6rem solid #fff;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+
+
+
+.stud-det-logo img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.stud-info{
+    margin-top: 5rem;
+}
+
+.stud-info h6{
+    font-size: 2.76rem;
+    font-weight: 500;
+}
+
+.stud-info span{
+    font-size: 1.55rem;
+    font-weight: 500;
+    letter-spacing: .65px;
+    color: #212121;
+}
+
+.stud-det-main-box{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+}
+
+.bg-img{
+    position: relative;
+    width: 100%;
+    background: url('../images/red-bg.jpg')no-repeat center center/cover;
+    height: 10rem;
+    margin-top: 4rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+}
+
+.user-prof-info-flex-box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.user-prof-bx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.prof-i{
+    position: relative;
+    width: 4.5rem;
+    height: 4.5rem;
+    display: grid;
+    place-items: center;
+    background-color: #fb3762;
+    color: #fff;
+    font-size: 1.67rem;
+    border-radius: 50%;
+}
+
+.prof-info span{
+    font-size: 1.2rem;
+    letter-spacing: .5px;
+    color: #212121;
+    font-weight: 500;
+}
+
+.prof-info h6{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #242424;
+
+}
+
+.payment-hist-comp{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 3rem 3rem;
+    margin-top: 3rem;
+}
+
+.payment-hist-comp h6{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .6px;
+
+}
+
+.download-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.dwld-i{
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    background-color: #fb6684;
+    border-radius: 50%;
+    font-size: 1.87rem;
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+
+.download-btn span{
+    color: #212121;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.date2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #a5a5a5;
+}
+
+.text{
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+    color: #242424;
+    display: block;
+}
+
+.time-slot{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #989898;
+}
+
+.amount{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #242424;
+    display: block;
+}
+
+.status{
+    font-size: 1.3rem;
+    color: #fb3762;
+    font-weight: 500;
+}
+
+.statcompted{
+    color: #43cf7f;
+}
+
+.right-course-mention-list-main{
+    position: absolute;
+    top: 11rem;
+    right: 2rem;
+    width: 31rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    /* height: 100vh; */
+    /* overflow-x: auto; */
+}
+
+.course-ment-li-box{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: .65rem;
+    z-index: 1;
+    border-left: .4rem solid #fb3762;
+}
+
+/* .course-ment-li-box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .35rem;
+    height: 100%;
+    background-color: #fb6684;
+    border-radius: 1rem;
+    
+} */
+
+.course-ment-text{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.course-ment-text h6{
+    font-size: 1.87rem;
+    letter-spacing: .5px;
+    font-weight: 500;
+    color: #242424;
+    margin-bottom: .45rem;
+}
+
+.course-ment-text span{
+    font-size: 1.4rem;
+    color: #515151;
+}
+
+.course-ment-date-flex{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .76rem;
+}
+
+.corse-ment-dte{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.c-d-i{
+    font-size: 1.45rem;
+    color: #fb6684;
+}
+
+.corse-ment-dte span{
+    font-size: 1.2rem;
+    color: #fb6684;
+    font-weight: 400;
+    letter-spacing: .4px;
+}
+
+.corse-ment-time span{
+    color: #7da5fb;
+
+}
+
+.corse-ment-time .c-d-i{
+    color: #7da5fb;
+}
+
+.corse-user-img{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.corse-user-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+/* _____________________________________
+Our login comp css code
+----------------------------- */
+
+.login-comp{
+    position: relative;
+    width: 100%;
+
+}
+
+.login-fogotpasswrd-main-box{
+    position: relative;
+    width: 100%;
+
+}
+
+.login-box{
+    position: relative;
+    width: 50rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    padding: 2rem 3rem;
+    background-color: #fff;
+}
+
+.login-bg-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    background: url('../images/red-bg.jpg')no-repeat center center/cover;
+}
+
+.login-logo{
+    position: relative;
+    width: 12rem;
+    margin-bottom: 1.5rem;
+}
+
+.login-logo img{
+    width: 100%;
+    height: auto;
+
+}
+
+.login-box h5{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #212121;
+    letter-spacing: .5px;
+}
+
+.sign-in-form{
+    position: relative;
+    width: initial;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.log-inpt-fild-bx{
+    position: relative;
+    width: 35rem;
+    height: 5rem;
+    background-color: #fff;
+    border: .1rem solid #fb6684;
+    margin: 0 auto;
+    border-radius: .5rem;
+}
+
+.log-inpt-fild-bx input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #242424;
+    padding-inline: 1rem;
+    letter-spacing: .5px;
+    border-radius: .5rem;
+}
+
+.log-inpt-fild-bx input::placeholder{
+    font-weight: 400;
+
+}
+
+.forgot-pass-btn{
+    position: relative;
+    width: max-content;
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    color: #fb3762;
+    font-weight: 500;
+    letter-spacing: .4px;
+    margin-left: auto;
+}
+
+.login-submit-btn{
+    position: relative;
+    width: 100%;
+    margin-top: 1.5rem;
+    height: 5rem;
+    background-color: #fb3762;
+    border: none;
+    border: .1rem solid #fb3762;
+    font-size: 1.65rem;
+    font-weight: 500;
+    letter-spacing: .45px;
+    color: #fff;
+    border-radius: .4rem;
+}
+
+.signup-text{
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #212121;
+}
+
+.signup-text a{
+    color: #fb3762;
+    font-weight: 500;
+}
+
+.emailid{
+    color: #3c88f9;
+    text-decoration: underline;
+}
+
+.coursetext{
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+
+.statusactive{
+    font-size: 1.5rem;
+    color: #fb6684;
+}
+
+.num{
+    font-size: 1.4rem;
+    color: #212121;
+}
+
+.course-popup-det-comp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 1000;
+    display: none;
+
+}
+
+.course-popup-det-comp.coursedetactive{
+    display: flex;
+}
+
+.course-popup-det-comp:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    opacity: 0.7;
+    z-index: -1;
+}
+.pend-text{
+    color: #fb3762 !important;
+}
+
+.course-det-table-box{
+    position: relative;
+    top: 7rem;
+    width: 100rem;
+    height: 30rem;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.close-popup-btn{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: grid;
+    place-items: center;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.coursetext i{
+    color: #fb6684;
+}
+
+/* _________________________________
+ our add instrucotr css code
+ -------------- */
+
+ .add-instruct-comp{
+    position: relative;
+    width: 100%;
+    margin-top: 1.5rem;
+ }
+
+ .inst-prof-box{
+    position: relative;
+    width: 23rem;
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    border-radius: .45rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border: .1rem solid #eee;
+ }
+
+ .left-inst-prof-img{
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+ }
+
+ .left-inst-prof-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+ }
+
+ .inst-prof-info h6{
+    font-size: 1.67rem;
+    font-weight: 500;
+    letter-spacing: .45px;
+ }
+
+ .inst-prof-info span{
+    font-size: 1.3rem;
+    letter-spacing: .4px;
+ }
+
+ .vital-infor-form-box{
+    position: relative;
+    width: 100%;
+    margin-top: 5rem;
+    padding: 2.5rem 2.5rem;
+    background-color: #fff;
+    border-radius: .65rem;
+ }
+
+ .vital-infor-form-box form{
+    position: relative;
+    width: 100%;
+ }
+
+ .inst-inpt-fild{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+ }
+
+ .inst-inpt-fild label{
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #000;
+ }
+
+ .inst-inpt-fild input , .inst-inpt-fild select{
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    background-color: #fff;
+    border: none;
+    border: .1rem solid #eee;
+    padding-inline: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #242424;
+    letter-spacing: .7px;
+ }
+
+ .inst-inpt-fild input::placeholder{
+    font-weight: 400;
+ }
+
+ .inst-inpt-grid{
+    margin-top: 2rem;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+    column-gap: 3rem;
+    row-gap: 3rem;
+ }
+
+ .inst-inpt-fild input[type="file"]{
+    padding-inline: 0;
+ }
+
+ .inst-inpt-fild input::-webkit-file-upload-button{
+    width: max-content;
+    height: 100%;
+    background-color: #fb6684;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+ }
+
+ .content {
+    width: 100% !important;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+ }
+
+.submit-btn{
+    position: relative;
+    width: 20rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    font-size: 1.55rem;
+    color: #fff;
+    background-color: #fb3762;
+    border-radius: .5rem;
+    border: none;
+    letter-spacing: .5px;
+    margin-top: 5rem;
+}
+
+.vital-infor-form-box h6{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .76px;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    color: #a5a5a5;
+    
+}
+
+.stud-inpt-grid{
+    grid-template-columns: 1fr 2fr;
+}
+
+.deact{
+    color: orangered;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.act{
+    color: #43cf7f;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.courselist-btn{
+    position: relative;
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    padding: .76rem .65rem;
+    background-color: #43cf7f;
+    border: none;
+    border: .1rem solid #43cf7f;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: .65px;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.course-prof-img{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.course-prof-img img{
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.course-prof-img span{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #242424;
+    letter-spacing: .67px;
+}
+
+.courselist-comp .student-table-box table thead tr th{
+    background-color: #ecfff4;
+}
+
+.inst-prof-box2{
+    width: 30rem;
+}
+
+.add-cat-grid{
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.submit-btn3{
+    margin-top: 2.9rem;
+    width: 100%;
+}
+
+.add-cat-img{
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 5px 10px #ddd;
+}
+
+.add-cat-img img{
+    border-radius: .55rem;
+}
+
+.cate-td-info h6{
+    font-size: 1.3rem;
+}
+
+.cate-td-info span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.logo-text-box h4{
+    font-size: 1.76rem;
+}
+
+.devtext{
+    font-size: 1.6rem;
+}
+
+.student-table-box::-webkit-scrollbar{
+    height: .445rem;
+    background-color: transparent;
+}
+
+.student-table-box::-webkit-scrollbar-thumb{
+    background-color: #fb6684;
+}
+
+.action-btns2 button:nth-child(2){
+    color: #fb3762;
+}
+
+.corse-det-form-grid{
+    grid-template-columns: 2fr 1fr;
+}
+
+.inst-prof-box{
+    width: max-content;
+    padding-inline: 1.98rem;
+}
+
+.view-text-btn{
+    cursor: pointer;
+}
+
+.view-text-btn i{
+    color: #fb6684;
+}
+
+
+/* ________________________________________________
+ About comp css code
+ ---------------------------- */
+
+ .about-comp{
+    position: relative;
+    width: 100%;
+    padding: 2.5rem 2.5rem;
+    background-color: #fff;
+    border-radius: .45rem;
+    margin-top: 3.5rem;
+
+ }
+
+ .about-comp h6{
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #242424;
+    letter-spacing: .65px;
+    margin-bottom: 2rem;
+ }
+
+ .about-grid{
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5rem;
+    row-gap: 4rem;
+    position: relative;
+    width: 100%;
+ }
+
+ .left-image-attachment-main{
+    position: relative;
+    width: 100%;
+
+ }
+
+ .left-image-attachment-main span{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .56px;
+    color: #a5a5a5;
+    margin-bottom: 1rem;
+    display: inline-block;
+ }
+
+ .about-img{
+    position: relative;
+    width: 100%;
+    height: 30rem;
+ }
+
+ .about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .55rem;
+ }
+
+ .upload-btn-box{
+    position: relative;
+    width: 100%;
+    margin-top: 3.5rem;
+ }
+
+ .upload-btn-box input{
+    display: none;
+ }
+
+ .upload-btn-box label{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    height: 5rem;
+    background-color: #fb3762;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.55rem;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    border-radius: .45rem;
+
+ }
+
+ .left-image-attachment-main p{
+    position: relative;
+    width: 90%;
+    margin-top: 1.3rem;
+    font-size: 1.4rem;
+    color: #989898;
+    font-weight: 500;
+    line-height: 1;
+ }
+
+ .left-image-attachment-main p span{
+    color: #242424;
+    font-weight: 500;
+
+ }
+
+ .right-about-filed-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    margin-top: 2rem;
+ }
+
+.content3{
+    margin-top: 1rem;
+}
+
+.submit-btn4{
+    width: 100%;
+}
+
+.blog-comp{
+    position: relative;
+    width: 100%;
+}
+
+.blog-top-box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.left-blog-t-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left-blog-t-box h6{
+    font-size: 2.3rem;
+    letter-spacing: .56px;
+    font-weight: 500;
+}
+
+.blog-btn{
+    position: relative;
+    width: max-content;
+    padding-inline: 1rem;
+    height: 3.5rem;
+    background-color: #fff;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+    cursor: pointer;
+    color: #fb6684;
+    border: .1rem solid #fb6684;
+    border-radius: .5rem;
+    
+}
+
+.right-blog-t-bx{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.blog-sel-box{
+    position: relative;
+    width: max-content;
+    height: 3.5rem;
+    background-color: #fff;
+    padding-inline: 1.1rem;
+    border: .1rem solid #eee;
+    border-radius: .5rem;
+
+}
+
+.blog-sel-box select{
+    width: 100%;
+    height: 100%;
+    font-size: 1.4rem;
+    background-color: transparent;
+    border: none;
+}
+
+.left-all-blog-numb-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 0;
+   
+}
+
+.left-all-blog-numb-box p{
+    position: relative;
+    font-size: 1.35rem;
+    letter-spacing: .5px;
+    font-weight: 400;
+    color: #212121;
+}
+
+.left-all-blog-numb-box p:nth-child(1):before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5.76rem;
+    width: .12rem;
+    height: 90%;
+    background-color: #c1c1c1;
+}
+ 
+.left-all-blog-numb-box p span{
+    font-size: 1.3rem;
+    color: #959595;
+}
+
+.right-blog-search-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap:    1.5rem;
+}
+
+.b-search{
+    position: relative;
+    width: 20rem;
+    height: 3.67rem;
+    background-color: #fff;
+    border: .1rem solid #eee;
+    border-radius: .5rem;
+}
+
+.b-search input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+    color: #242424;
+    padding-inline: 1rem;
+}
+
+.b-search input::placeholder{
+    font-weight: 400;
+}
+
+.left-all-blog-filter-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: .67rem;
+}
+
+.right-pagination-flex-box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.right-pagination-flex-box h6{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #515151;
+}
+
+.page-btn{
+    position: relative;
+    width: max-content;
+    padding: 0 1.3rem;
+    height: 3rem;
+    background-color: #fff;
+    border: .1rem solid #ddd;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.right-pagination-flex-box p{
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    color: #515151;
+    word-spacing: 1.5px;
+}
+
+.right-pagination-flex-box p span{
+    font-size: 1.4rem;
+    color: #fb3762;
+}
+
+.blog-second-box{
+    margin-top: 2.67rem;
+    margin-bottom: 1rem;
+}
+
+.blog-table-comp{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    padding: 2.5rem 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+}
+
+.blog-table-box{
+    margin-top: 0;
+}
+
+.blogtext{
+    color: #515151;
+}
+
+.blogtext span{
+    position: relative;
+    padding-left: 2rem;
+    display: inline-block;
+    color: #3c88f9;
+}
+
+
+.blogtext span:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 1.3rem;
+    height: .13rem;
+    background-color: #212121;
+}
+
+.datepublish{
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #515151;
+    display: block;
+}
+
+.bmessageact{
+    position: relative;
+    display: inline-block;
+    width: max-content;
+    height: 3rem;
+    background-color: #7c7c7c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 1.3rem;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: .45rem;
+
+
+}
+
+
+.bmessageact:before{
+    content: "1";
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    width: max-content;
+    height: max-content;
+    padding: .15rem .6rem;
+    background-color: #fb3762;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bmessageact:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border: .6rem solid #7c7c7c;
+    border-color: transparent;
+    border-top-color: #7c7c7c;
+}
+
+.b-search2{
+    margin-left: auto;
+    margin-bottom: 2.5rem;
+}
+
+.faq-table-box table thead tr th{
+    background-color: #e8fff2;
+}
+
+.blogtext2{
+    margin-bottom: 0;
+}
+
+.stars{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.stars i{
+    font-size: 1.4rem;
+    color: orangered;
+    cursor: pointer;
+}
+
+.stars .fa-solid{
+    display: none;
+}
+
+.stars.staractive .fa-regular{
+    display: none;
+}
+
+.stars.staractive .fa-solid{
+    display: block;
+}
+
+
+.faq-btns{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.faq-btn{
+    position: relative;
+    width: max-content;
+    padding: 0 1rem;
+    height: 3.5rem;
+    background-color: #43cf7f;
+    border: none;
+    border: .1rem solid transparent;
+    border-radius: .5rem;
+    cursor: pointer;
+    
+}
+
+.faq-btn2{
+    background-color: #3c88f9 ;
+}
+
+.faq-btn3{
+    background-color: #fb3762;
+}
+
+.faq-btn i{
+    font-size: 1.4rem;
+    color: #fff;
+
+}
+
+.faq-top-flex-box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.faq-top-flex-box h6{
+    font-size: 2.3rem;
+    color: #242424;
+    letter-spacing: .5px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.faq-top-flex-box a{
+    font-size: 1.35rem;
+    width: max-content;
+    height: 3.5rem;
+    padding-inline: 1.3rem;
+    background-color: #fb3762;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 500;
+    border-radius: .4rem;
+}
+
+.inst-inpt-fild textarea{
+    position: relative;
+    width: 100%;
+    padding: 1rem 1rem;
+    background-color: #fff;
+    border: none;
+    border: .1rem solid #eee;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: .78px;
+    resize: none;
+}
+
+.inst-textara-fild{
+    margin-top: 2rem;
+}
+
+.contact-page-comp{
+    position: relative;
+    width: 100%;
+    padding: 2.5rem 2.5rem;
+    background-color: #fff;
+    border-radius: .55rem;
+    margin-bottom: 2.5rem;
+
+}
+
+.contact-page-comp h5{
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: .67px;
+    margin-bottom: 2.5rem;
+} 
+
+.contact-grid{
+    position: relative;
+    width: 100%;
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+.cont-box{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    border: .1rem solid #fb6684;
+    border-radius: .5rem;
+    padding: 2.5rem 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.cont-icon{
+    font-size: 3rem;
+    color: #fb3762;
+}
+
+.cont-info h6{
+    font-size:2rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    margin-bottom: .76rem;
+}
+
+.cont-info span{
+    display: block;
+    font-size: 1.4rem;
+    color: #797878;
+}
+
+
+.contact-form{
+    margin-top: 2.5rem;
+}
+
+.contact-form h6{
+    font-size: 1.76rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.cont-form-grid{
+    width: 100%;
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+.id a i{
+    color: #fb3762;
+}
+.inst-prof-box{
+    margin-top: 4rem;
+}
+
+.main-wrap {
+    padding-top: 4rem;
+}
+
+.contact-page-comp {
+    margin-top: 2rem;
+}
+
+.blog-comp{
+    margin-top: 3rem;
+    background-color: #fff;
+    padding: 2rem 2rem;
+    border-radius: .5rem;
+}
+
+.unpublish:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -1.5rem;
+    width: .15rem;
+    height: 90%;
+    background-color: #ddd;
+}
+
+.class-link{
+    color: #000!important;
+    text-transform: capitalize !important;
+    margin-bottom: 1rem !important;
+}
+
+.lesson-fild-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+.lesson-flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    
+}
+
+.lesson-flex-box h6{
+    margin-bottom: 0 !important;
+}
+
+.add-leson{
+    position: relative;
+    padding: .87rem 1.5rem;
+    background-color: #fb6684;
+    border: none;
+    border: .1rem solid #fb6684;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius:.5rem;
+    cursor: pointer;
+
+}
+
+.view-eye-course-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+
+}
+
+
+.view-eye-course-btn i{
+    color: #43cf7f !important;
+}
+
+.add-inst-btn{
+    position: relative;
+    width: 13rem;
+    margin-left: auto;
+    height: 4rem;
+    background-color: #fb3762;
+    color: #fff;
+    font-size: 1.4rem;
+    border: none;
+    cursor: pointer;
+    border-radius: .5rem;
+
+}
+
+.block-btns{
+    display: flex ;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+
+
+.block-btns button{
+    padding: 0 0  !important;
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    /* color: #000; */
+    font-weight: 500;
+}
+
+.block-btns .taken{
+    color: #3c88f9 !important;
+
+}
+
+.block-btns .Pending{
+    color: #fb3762 !important;
+
+}
+
+.statusactive{
+    display: block;
+}
+
+.Pending-selct{
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+}
